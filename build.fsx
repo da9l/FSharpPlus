@@ -253,7 +253,8 @@ Target.create "PublishNuget" (fun _ ->
 // --------------------------------------------------------------------------------------
 // Generate the documentation
 
-let fsiExe = (__SOURCE_DIRECTORY__ @@ "packages" @@ "docs" @@ "FSharp.Compiler.Tools" @@ "tools" @@ "fsi.exe")
+let fsiExe = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\FSharp\fsi.exe"
+// let fsiExe = (__SOURCE_DIRECTORY__ @@ "packages" @@ "docs" @@ "FSharp.Compiler.Tools" @@ "tools" @@ "fsi.exe")
 
 /// Run the given buildscript with FAKE.exe
 let executeWithOutput configStartInfo =
